@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="defafult.css" />
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(100px, auto));
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellendus laboriosam eius, sunt eveniet iusto, nobis nihil architecto aspernatur excepturi rem minus expedita ut maiores et quis magnam dolorum praesentium!
+        </div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam magni vero placeat quis dolorum non praesentium fugit ducimus temporibus! Libero soluta natus labore? Ipsum omnis debitis voluptatibus veniam nostrum architecto?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex laboriosam nisi doloribus deleniti. Fugit, alias exercitationem ex, nisi dolore non eum molestias quod voluptas sequi voluptates magni labore deleniti quidem?
+        </div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+    </div>
+</body>
+</html>

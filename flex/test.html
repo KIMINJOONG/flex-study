@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <script>
+        function getPrice() {
+            const price = document.getElementById("price").value;
+            const count = document.getElementById("count").value;
+            console.log(count);
+            const total = price * count;
+            document.getElementById("total").innerHTML = total;
+        }
+    </script>
+    <body>
+        <select id="price" onchange="getPrice();">
+            <option selected>1000</option>
+            <option>2000</option>
+        </select>
+
+        <input type="text" id="count" onblur="getPrice();" />
+        <span>가격 : </span>
+        <span id="total"></span>
+    </body>
+</html>
